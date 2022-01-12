@@ -1,6 +1,6 @@
 # React.js
 
-## Pass down onClick props to child component
+## Pass down onClick props to a child component
 
 **App.js (Parent component)**
 
