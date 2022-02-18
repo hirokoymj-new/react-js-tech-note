@@ -72,5 +72,5 @@ useEffect(() => {
 
 ### References:
 
-- [StackOverFlow: useFetch hook with typescript and axios](https://stackoverflow.com/questions/65651772/)usefetch-hook-with-typescript-and-axios
+- [StackOverFlow: useFetch hook with typescript and axios](https://stackoverflow.com/questions/65651772/usefetch-hook-with-typescript-and-axios)
 - [Clean API Call With React Hooks](https://betterprogramming.pub/clean-api-call-with-react-hooks-3bd6438a375a)
