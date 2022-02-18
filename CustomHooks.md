@@ -4,7 +4,7 @@
 
 ### useFetch.ts
 
-```js
+```ts
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -27,7 +27,8 @@ export const useFetch = <R extends any = any>({ method, url }: any) => {
       });
   }, [url, method]);
 
-  const refetch = () => { // refetch function is used when you want to trigger API.
+  const refetch = () => {
+    // refetch function is used when you want to trigger API.
     setLoading(true);
     axios({ url, method })
       .then((response) => {
@@ -47,7 +48,7 @@ export const useFetch = <R extends any = any>({ method, url }: any) => {
 
 ### How to use useFetch.ts
 
-```js
+```ts
 const { data, loading, error, refetch } = useFetch<string[]>({
   url: "https://corona.lmao.ninja/v2/historical/usacounties",
   method: "get",
