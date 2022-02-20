@@ -53,22 +53,39 @@ const { data, loading, error, refetch } = useFetch<string[]>({
   url: "https://corona.lmao.ninja/v2/historical/usacounties",
   method: "get",
 });
+
+// JSX
+return (
+  <div>
+    {loading ? (
+      <p>...loading</p>
+    ) : (
+      <p>
+        {data?.map((d) => (
+          <li>{d.name}</li>
+        ))}
+      </p>
+    )}
+  </div>
+);
 ```
 
 - `refetch` is used when you want to trigger axios API. For examle when you click a button, a api calls.
 
-Example 1
+Example:
 
 ```js
-<button onClick={refetch}>search</button>
-```
+const { data, loading, error, refetch } = useFetch<string[]>({
+  url: "https://corona.lmao.ninja/v2/historical/usacounties",
+  method: "get",
+});
 
-Example 2
-
-```js
 useEffect(() => {
   refetch();
 }, [us_state]);
+
+// JSX
+return <button onClick={refetch}>search</button>;
 ```
 
 ### References:
