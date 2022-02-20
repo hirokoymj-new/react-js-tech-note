@@ -28,6 +28,8 @@ const [formValues, setFormValues] = useState<IFormValue>({
 });
 ```
 
+<hr />
+
 # useState updater function does not reflecting change immediately
 
 - The state update using the updater provided by useState hook is also asynchronous, and will not be reflected immediately.
