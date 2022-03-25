@@ -87,7 +87,7 @@ useEffect(() => {
 // JSX
 return <button onClick={refetch}>search</button>;
 ```
-## How to make easier to render function in React. 
+## How to make render() in React easier. 
 - Use/built re-useable components. Use `Children` prop in a re-usable component so the Children part will be act as a template you can insert any HTMLs.
 - Select a nice hooks package to make easier to render. For example REST apis, I use useAxios. For form I use React-Hook-Form.
 - If you find similar features in multiple pages, consider to create custom Hooks.
